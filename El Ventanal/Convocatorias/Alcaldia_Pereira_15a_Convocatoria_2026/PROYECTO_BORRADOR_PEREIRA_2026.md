@@ -54,30 +54,32 @@ El proyecto proyecta obras de arte plástico, colecciones fotográficas, perfile
 ## IV. OBJETIVOS DEL PROYECTO
 
 ### Objetivo General
-Instalar y operar durante 90 días una red piloto de 5 galerías digitales interactivas ("El Ventanal") en nodos de alto flujo peatonal de Pereira, exhibiendo el trabajo de al menos 15 artistas locales y alcanzando una audiencia estimada de 30.000 espectadores.
+Instalar y operar durante 90 días (Octubre - Diciembre 2026) una red piloto de 8 a 10 galerías digitales e interactivas ("El Ventanal") en nodos de alto flujo peatonal y turístico de Pereira, exhibiendo el trabajo de al menos 20 artistas locales y alcanzando una audiencia estimada de 50.000 espectadores y visitantes.
 
 ### Objetivos Específicos
-1. **Curaduría y Producción Gráfica:** Seleccionar y digitalizar 50 obras de arte, colecciones fotográficas y reseñas de artistas de la Perla del Otún en formato 4K ultra-HD.
-2. **Despliegue Técnico Piloto:** Configurar 5 sistemas de reproducción (MiniPCs x86 / Raspberry Pi 4 + Pantallas Comerciales) conectadas al motor de señalización digital El Ventanal.
-3. **Canal de Interacción Ciudadana:** Implementar capas de códigos QR inteligentes para medir el engagement, el acceso a la agenda cultural y el tráfico de espectadores hacia las biografías de los artistas.
+1. **Curaduría y Producción Gráfica:** Seleccionar y digitalizar 60 obras de arte, colecciones fotográficas y reseñas de creadores pereiranos en formato 4K ultra-HD.
+2. **Despliegue Técnico Piloto (8 a 10 Nodos):** Configurar 8 a 10 sistemas de reproducción (MiniPCs x86 / Raspberry Pi 4 + Pantallas Comerciales) conectadas al motor de señalización digital El Ventanal.
+3. **Canal de Interacción y Vitrina para Artistas:** Implementar capas de códigos QR inteligentes que funcionen como vitrina comercial y promocional gratuita para los artistas (enlace directo a sus portafolios, biografías, redes sociales y contacto para venta de obras), midiendo el tráfico de visitantes en tiempo real.
+4. **Guía Turística e Información Cultural:** Integrar en la parrilla la agenda de eventos culturales, gastronómicos y alumbrados navideños de Pereira durante el último trimestre del año.
 
 ---
 
 ## V. DESCRIPCIÓN DE LA PROPUESTA TÉCNICA
 
-- **Formatos de Pantalla:** Pantallas comerciales LCD de alto brillo (55"-65", 500-1000 nits) y módulos LED adaptados a interiores.
-- **Hardware de Cómputo Edge:** Reproductores compactos corriendo Linux/Windows Kiosk Mode con salida HDMI limpia.
+- **Modelo de Contraprestación para Artistas Creadores:** En lugar de estipular pagos únicos menores en efectivo, El Ventanal ofrece a los artistas locales una plataforma de **difusión masiva y promoción gratuita de su portafolio en resolución 4K** durante 90 días en sitios comerciales de alto tráfico. Cada obra incluye un canal interactivo mediante código QR que redirige al espectador directamente al WhatsApp, Instagram o sitio web del artista para negociación directa sin intermediarios.
+- **Formatos de Pantalla:** Pantallas comerciales LCD de uso continuo 24/7 (55"-65", 500-1000 nits) y módulos LED adaptados a interiores.
+- **Hardware de Cómputo Edge (8 a 10 Nodos):** Reproductores compactos x86 corriendo Linux/Windows Kiosk Mode con salida HDMI limpia.
 - **Plataforma Web & CMS:** Basada en la arquitectura **Digital Signage Engine** (React, TypeScript, CSS Glassmorphism), parametrizada para actualizar contenidos remotamente sin apagar pantallas.
-- **Sincronización en Tiempo Real:** Actualización remota vía WebSockets para marquesinas de eventos noticiosos y agenda cultural de Pereira.
+- **Sincronización en Tiempo Real:** Actualización remota vía WebSockets para marquesinas de eventos noticiosos, información turística y agenda de fin de año en Pereira.
 
 ---
 
-## VI. COBERURA Y SITIOS ANFITRIONES PILOTO EN PEREIRA
+## VI. COBERTURA Y SITIOS ANFITRIONES PILOTO EN PEREIRA (8 NODOS)
 
-1. **Hostelería & Gastronomía (2 Pantallas):** Bares y restaurantes del sector de Circunvalar / Centro de Pereira.
-2. **Educación (1 Pantalla):** Lobby o centro cultural universitario de Pereira (ej: UTP / Área Andina / Libre).
-3. **Bienestar (1 Pantalla):** Gimnasio o centro de acondicionamiento físico de alto flujo.
-4. **Comunidad & Arte (1 Pantalla):** Centro cultural o pasaje comercial del centro de Pereira.
+1. **Hostelería & Gastronomía (3 Pantallas):** Bares y restaurantes de los corredores turísticos de Circunvalar, Corocito y Centro de Pereira.
+2. **Educación & Cultura (2 Pantallas):** Lobbys y centros culturales universitarios de Pereira (ej: UTP / Área Andina / Libre).
+3. **Bienestar & Salud (2 Pantallas):** Gimnasios y centros de acondicionamiento físico de alto flujo peatonal.
+4. **Comunidad & Comercio (1 a 2 Pantallas):** Pasajes culturales, iglesias o centros comerciales del centro de Pereira.
 
 ---
 
@@ -85,9 +87,9 @@ Instalar y operar durante 90 días una red piloto de 5 galerías digitales inter
 
 | Mes | Actividad Principal | Entregable / Hito |
 | :--- | :--- | :--- |
-| **Mes 1 (Octubre 2026)** | Convocar y seleccionar a 15 artistas de Pereira; curaduría gráfica 4K; montaje técnico de 5 pantallas en nodos turísticos y gastronómicos (Circunvalar / Centro) en la Semana de Receso. | 50 Obras digitalizadas + 5 Pantallas operativas en nodos turísticos. |
-| **Mes 2 (Noviembre 2026)** | Circulación continua de galerías digitales; activación de agenda cultural y gastronómica de Pereira; métricas de interacción QR para turistas. | Reporte de tráfico interactivo e interacciones de visitantes. |
-| **Mes 3 (Diciembre 2026)** | Especial de Navidad y Alumbrados de Pereira en pantallas; difusión masiva en temporada turística alta; informe final a la Secretaría de Cultura. | Informe de gestión final + balance de audiencia turística y local. |
+| **Mes 1 (Octubre 2026)** | Convocar y seleccionar a 20 artistas de Pereira; curaduría 4K; montaje técnico de 8 a 10 pantallas en nodos turísticos y comerciales en la Semana de Receso. | 60 Obras digitalizadas + 8-10 Pantallas operativas. |
+| **Mes 2 (Noviembre 2026)** | Circulación continua; agenda gastronómica y cultural de Pereira; métricas QR de interacción con artistas. | Reporte de tráfico interactivo y lecturas QR. |
+| **Mes 3 (Diciembre 2026)** | Especial de Navidad y Alumbrados de Pereira; informe final de gestión a la Secretaría de Cultura. | Informe final + balance de audiencia turística y local. |
 
 ---
 
@@ -95,12 +97,12 @@ Instalar y operar durante 90 días una red piloto de 5 galerías digitales inter
 
 | Rubro Presupuestal | Descripción y Detalle | Valor (COP) |
 | :--- | :--- | :--- |
-| **Honorarios de Curaduría y Artistas** | Pago de derechos de exhibición a 15 artistas visuales/fotógrafos de Pereira ($550.000 c/u) + Honorarios de Curador. | $9.750.000 |
-| **Equipamiento y Hardware Piloto** | Alquiler/Adecuación de 5 reproductores MiniPC x86 + pantallas comerciales + soportes y cables HDMI. | $6.000.000 |
-| **Producción Gráfica y Software** | Adaptación de piezas 4K, desarrollo de servidor de contenidos y optimización de plataforma web. | $4.000.000 |
-| **Impresión de Material QR y Señalética** | Material de soporte físico en acrílico/vinilo para el canal QR interactivo en cada pantalla. | $1.750.000 |
-| **Imprevistos y Logística Local** | Traslados, montaje técnico in situ y póliza de cumplimiento (10% exigida por Pereira). | $2.000.000 |
-| **TOTAL EXACTO SOLICITADO** | **Aporte Convocatoria Estímulos Pereira 2026 (Eficiencia $23.5M)** | **$23.500.000** |
+| **Equipamiento y Hardware (8-10 Nodos)** | Alquiler/Adecuación de 8 a 10 reproductores MiniPC x86 + pantallas comerciales + soportes de pared y HDMI. | $10.500.000 |
+| **Desarrollo de Software, Cloud y Producción 4K** | Adaptación de piezas a 4K, servidores cloud, desarrollo de la web app y del sistema QR interactivo. | $7.000.000 |
+| **Estrategia Comercial, Marketing e Impresión QR** | Material físico en acrílico/vinilo para las 8-10 pantallas + dossier comercial de patrocinadores locales. | $3.500.000 |
+| **Logística, Montaje In Situ y Póliza** | Traslados, instalación técnica en los 8-10 locales de Pereira + Póliza de Cumplimiento (10% exigida por Pereira). | $2.500.000 |
+| **Honorarios Directos en Efectivo a Artistas** | *(Reemplazado por contraprestación en difusión masiva 4K y canal QR de contacto directo)*. | $0 |
+| **TOTAL EXACTO SOLICITADO** | **Aporte Convocatoria Estímulos Pereira 2026 (Red de 8-10 Nodos)** | **$23.500.000** |
 
 ---
 
