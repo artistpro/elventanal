@@ -26,8 +26,9 @@
 4. **Monto Solicitado a la Convocatoria (Estrategia de Eficiencia Presupuestal):**  
    **$23.500.000 COP** *(Valor ubicado por debajo del tope máximo de $25.5M para garantizar margen de seguridad y demostrar eficiencia presupuestal ante los jurados).*
 
-5. **Duración de la Ejecución:**  
-   **3 Meses** (Septiembre - Noviembre de 2026)
+5. **Duración y Período de Ejecución (Ajustado a Temporada Turística de Fin de Año):**  
+   **3 Meses** (1 de Octubre al 31 de Diciembre de 2026)  
+   *(Aprovechando la semana de receso de octubre, las festividades de noviembre y la alta afluencia de turistas nacionales e internacionales durante la temporada navideña en Pereira).*
 
 ---
 
@@ -41,11 +42,12 @@ El proyecto proyecta obras de arte plástico, colecciones fotográficas, perfile
 
 ---
 
-## III. JUSTIFICACIÓN E IMPACTO SOCIAL Y CULTURAL EN PEREIRA
+## III. JUSTIFICACIÓN E IMPACTO SOCIAL, CULTURAL Y TURÍSTICO EN PEREIRA
 
-- **Democratización del Acceso a la Cultura:** El arte tradicional suele estar confinado a galerías cerradas. El Ventanal lleva las obras de creadores pereiranos al espacio cotidiano donde la gente se reúne, come, estudia y entrena.
-- **Visibilidad a Creadores Locales:** Ofrece una vitrina de alta resolución a fotógrafos, pintores e ilustradores de Pereira que carecen de canales masivos de difusión.
-- **Innovación en Mediación Cultural:** Combina la apreciación estética con la tecnología digital (QR, WebSockets, capas interactivas) sin interrumpir la experiencia del espectador.
+- **Activación Turística en Temporada Alta de Fin de Año (Octubre - Diciembre):** Pereira es la capital comercial y logística del Eje Cafetero, registrando su pico más alto de visitantes durante la Semana de Receso de Octubre, las festividades de Noviembre y la temporada Navideña de Diciembre. El Ventanal convierte las pantallas en vitrinas de promoción turística y cultural que orientan, cautivan y conectan al visitante con la oferta local.
+- **Promoción del Paisaje Cultural Cafetero (PCCN) y Talento Local:** Exhibe obras de artistas y fotógrafos pereiranos que retratan la biodiversidad, la arquitectura y el patrimonio inmaterial de Risaralda, fortaleciendo la identidad regional ante transeúntes y turistas.
+- **Democratización del Acceso a la Cultura:** El arte tradicional suele estar confinado a galerías cerradas. El Ventanal lleva las obras de creadores pereiranos al espacio cotidiano donde la gente se reúne, come, estudia y entrena en zonas turísticas y de alto tráfico (Circunvalar, Centro, Corredor Gastronómico).
+- **Innovación en Mediación Cultural e Información Turística:** Combina la apreciación estética con la tecnología digital (QR, WebSockets, capas interactivas) permitiendo que los turistas escaneen la pantalla para consultar mapas culturales, agendas de eventos de fin de año y biografías de los creadores.
 
 ---
 
@@ -79,13 +81,13 @@ Instalar y operar durante 90 días una red piloto de 5 galerías digitales inter
 
 ---
 
-## VII. PLAN DE ACTIVIDADES Y CRONOGRAMA DE EJECUCIÓN (3 MESES)
+## VII. PLAN DE ACTIVIDADES Y CRONOGRAMA DE EJECUCIÓN (OCTUBRE - DICIEMBRE 2026)
 
-| Mes | Actividad Principal | Entregable |
+| Mes | Actividad Principal | Entregable / Hito |
 | :--- | :--- | :--- |
-| **Mes 1 (Septiembre)** | Convocar y seleccionar a los 15 artistas de Pereira; curaduría y digitalización 4K. Instalación del hardware en los 5 sitios piloto. | 50 Obras digitalizadas + 5 Pantallas instaladas y operativas. |
-| **Mes 2 (Octubre)** | Transmisión continua de las galerías; activación de códigos QR interactivas y agenda cultural de Pereira. | Reporte de tráfico interactivo y lecturas QR. |
-| **Mes 3 (Noviembre)** | Evaluación de impacto social; exposición de cierre y entrega del informe final a la Secretaría de Cultura. | Informe final de gestión + métricas de audiencia. |
+| **Mes 1 (Octubre 2026)** | Convocar y seleccionar a 15 artistas de Pereira; curaduría gráfica 4K; montaje técnico de 5 pantallas en nodos turísticos y gastronómicos (Circunvalar / Centro) en la Semana de Receso. | 50 Obras digitalizadas + 5 Pantallas operativas en nodos turísticos. |
+| **Mes 2 (Noviembre 2026)** | Circulación continua de galerías digitales; activación de agenda cultural y gastronómica de Pereira; métricas de interacción QR para turistas. | Reporte de tráfico interactivo e interacciones de visitantes. |
+| **Mes 3 (Diciembre 2026)** | Especial de Navidad y Alumbrados de Pereira en pantallas; difusión masiva en temporada turística alta; informe final a la Secretaría de Cultura. | Informe de gestión final + balance de audiencia turística y local. |
 
 ---
 
