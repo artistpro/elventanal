@@ -170,21 +170,29 @@ button {
 .brand-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.logo-icon {
-  font-size: 1.6rem;
+.logo-img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  transition: var(--transition);
 }
 
-.logo-text {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  background: linear-gradient(90deg, #ffffff, #cbd5e1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.logo-img:hover {
+  transform: scale(1.03);
+}
+
+.footer-logo-img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
 }
 
 .badge-tag {
