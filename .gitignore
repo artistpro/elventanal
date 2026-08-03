@@ -1,0 +1,14 @@
+# Environments & Dependencies
+.venv/
+venv/
+node_modules/
+
+# Logs & Temporary Files
+*.log
+scratch/
+tmp/
+.DS_Store
+
+# Local Configs
+.env
+.env.local
