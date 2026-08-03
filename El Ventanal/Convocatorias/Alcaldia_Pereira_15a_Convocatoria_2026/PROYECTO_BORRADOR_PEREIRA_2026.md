@@ -64,9 +64,10 @@ Instalar y operar durante 90 días (Octubre - Diciembre 2026) una red piloto de 
 
 ---
 
-## V. DESCRIPCIÓN DE LA PROPUESTA TÉCNICA
+## V. DESCRIPCIÓN DE LA PROPUESTA TÉCNICA Y REGLA DE PARRILLA 80/20
 
-- **Modelo de Contraprestación para Artistas Creadores:** En lugar de estipular pagos únicos menores en efectivo, El Ventanal ofrece a los artistas locales una plataforma de **difusión masiva y promoción gratuita de su portafolio en resolución 4K** durante 90 días en sitios comerciales de alto tráfico. Cada obra incluye un canal interactivo mediante código QR que redirige al espectador directamente al WhatsApp, Instagram o sitio web del artista para negociación directa sin intermediarios.
+- **Regla Estricta de Parrilla (80% Cultural / 20% Pauta y Mecenazgo):** Para salvaguardar el valor estético y el arraigo cultural sin saturar al espectador, la programación de la pantalla se divide en un **80% de contenido cultural, artístico y turístico** (galerías 4K, fotografía del Paisaje Cultural Cafetero, biografías de artistas y agenda de eventos) y un **20% reservado para pauta comercial, patrocinadores e información institucional**.
+- **Modelo de Contraprestación y Mecenazgo Corporativo:** En lugar de estipular pagos únicos menores en efectivo a los artistas, El Ventanal les otorga una plataforma de **difusión masiva y promoción gratuita de su portafolio en resolución 4K** durante 90 días en sitios comerciales de alto tráfico con código QR de contacto directo. A su vez, se abre la línea de mecenazgo privado con empresas de Risaralda para cofinanciar la sostenibilidad y expansión de las pantallas.
 - **Formatos de Pantalla:** Pantallas comerciales LCD de uso continuo 24/7 (55"-65", 500-1000 nits) y módulos LED adaptados a interiores.
 - **Hardware de Cómputo Edge (8 a 10 Nodos):** Reproductores compactos x86 corriendo Linux/Windows Kiosk Mode con salida HDMI limpia.
 - **Plataforma Web & CMS:** Basada en la arquitectura **Digital Signage Engine** (React, TypeScript, CSS Glassmorphism), parametrizada para actualizar contenidos remotamente sin apagar pantallas.
