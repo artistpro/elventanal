@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Ventanal - Video Presentation Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      background: #090d16;
+      color: #f8fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Dynamic Ambient Glow background */
+    .bg-glow-1 {
+      position: absolute;
+      top: -150px;
+      left: -150px;
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, rgba(9, 13, 22, 0) 70%);
+      filter: blur(60px);
+      z-index: 1;
+    }
+    .bg-glow-2 {
+      position: absolute;
+      bottom: -150px;
+      right: -150px;
+      width: 900px;
+      height: 900px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(9, 13, 22, 0) 70%);
+      filter: blur(60px);
+      z-index: 1;
+    }
+    .grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: 2;
+      opacity: 0.6;
+    }
+
+    /* Container Card */
+    .slide-card {
+      position: relative;
+      z-index: 10;
+      width: 1760px;
+      height: 940px;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 28px;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 40px rgba(6, 182, 212, 0.15);
+    }
+
+    /* Header */
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 24px;
+    }
+    .slide-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.2));
+      border: 1px solid rgba(6, 182, 212, 0.4);
+      color: #38bdf8;
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .slide-num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #94a3b8;
+    }
+
+    /* Titles */
+    .title-box { margin-top: 15px; }
+    h1.slide-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.4rem;
+      font-weight: 900;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 60%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.slide-subtitle {
+      font-size: 1.4rem;
+      color: #94a3b8;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+
+    /* Body Layouts */
+    .content-body {
+      flex: 1;
+      margin-top: 30px;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+    }
+
+    /* Grid layout */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; width: 100%; }
+    .grid-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px; width: 100%; }
+
+    /* Feature Cards */
+    .info-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+    .info-card.highlight {
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(139, 92, 246, 0.15));
+      border-color: rgba(6, 182, 212, 0.5);
+    }
+    .info-card h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .info-card p {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+    .stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #f59e0b;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    /* Image Display Frame */
+    .img-frame {
+      width: 100%;
+      height: 480px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 2px solid rgba(6, 182, 212, 0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+    .img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Footer Progress Bar */
+    .slide-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .brand-footer {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+    .brand-footer img { height: 32px; border-radius: 6px; }
+    .progress-bar-bg {
+      width: 300px;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+      width: 0%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="slide-card" id="slideContainer">
+    <!-- Dynamic Rendered via JS -->
+  </div>
+
+  <script>
+    const slidesData = [
+      {
+        num: "01 / 18",
+        tag: "Iniciativa Cultural & Tecnológica",
+        title: "EL VENTANAL",
+        subtitle: "Red de Pantallas Culturales e Interactivas en Espacios Públicos",
+        layout: "cover",
+        image: "logo.jpg",
+        content: `
+          <div class="grid-2">
+            <div class="info-card highlight">
+              <h3>🖼️ Galería Digital 4K</h3>
+              <p>Sustituyendo el ruido publicitario por arte visual, fotografía del Paisaje Cultural Cafetero y mediación estética inteligente.</p>
+            </div>
+            <div class="info-card">
+              <h3>⚡ Sincronización Cloud</h3>
+              <p>Desplegado sobre la plataforma Digital Signage Engine con interacción en tiempo real mediante códigos QR.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "02 / 18",
+        tag: "Manifiesto & Visión",
+        title: "Arte a donde la gente vive, come y entrena",
+        subtitle: "Democratizando el acceso a la cultura sin barreras físicas",
+        layout: "split-img",
+        image: "hero_art.jpg",
+        content: `
+          <div class="grid-1" style="display:flex; flex-direction:column; gap:20px;">
+            <div class="info-card highlight">
+              <h3>🎨 Arte Vivo en la Ciudad</h3>
+              <p>60+ obras de pintores y fotógrafos pereiranos expuestas en HD.</p>
+            </div>
+            <div class="info-card">
+              <h3>📱 Mediación Interactiva</h3>
+              <p>Canal QR directo al smartphone para conocer la historia de cada obra.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "03 / 18",
+        tag: "Diagnóstico del Sector",
+        title: "El Problema de la Publicidad OOH Actual",
+        subtitle: "Saturación comercial vs Galerías físicas cerradas",
+        layout: "cards",
+        content: `
+          <div class="grid-2">
+            <div class="info-card" style="border-color: #ef4444;">
+              <h3 style="color: #f87171;">❌ Publicidad OOH Tradicional</h3>
+              <p>Loops de video rígidos, saturación visual molesta, cero interacción y precios inalcanzables para Pymes locales.</p>
+            </div>
+            <div class="info-card" style="border-color: #f59e0b;">
+              <h3 style="color: #fbbf24;">🏛️ Galerías Tradicionales</h3>
+              <p>Espacios cerrados y elitistas con baja afluencia de público joven y nulo alcance masivo para artistas emergentes.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "04 / 18",
+        tag: "La Solución Integral",
+        title: "Galería Digital e Interactiva",
+        subtitle: "Una experiencia estética inmersiva en sitios de alto tráfico",
+        layout: "split-img",
+        image: "lounge_screen.jpg",
+        content: `
+          <div class="grid-1" style="display:flex; flex-direction:column; gap:20px;">
+            <div class="info-card highlight">
+              <h3>📺 Pantallas 55" - 65" Commercial 4K</h3>
+              <p>Instaladas en bares, clínicas, restaurantes y universidades de Pereira.</p>
+            </div>
+            <div class="info-card">
+              <h3>🌐 Conexión en Tiempo Real</h3>
+              <p>Actualización remota de contenidos sin interrumpir la transmisión.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "05 / 18",
+        tag: "Regla de Oro de Parrilla",
+        title: "Relación 80% Cultural / 20% Pauta",
+        subtitle: "Garantizando alto arraigo comunitario y prestigio de marca",
+        layout: "cards",
+        content: `
+          <div class="grid-2">
+            <div class="info-card highlight">
+              <div class="stat-number">80%</div>
+              <h3>Arte, Cultura & Turismo</h3>
+              <p>Exhibición continua de obras, fotografía regional, historias de creadores y agenda cultural de Pereira.</p>
+            </div>
+            <div class="info-card">
+              <div class="stat-number" style="color: #38bdf8;">20%</div>
+              <h3>Pauta & Mecenazgo</h3>
+              <p>Marcas comerciales seleccionadas. Al estar en un entorno bello, logran un 300% más de recordación positiva.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "06 / 18",
+        tag: "Propuesta de Valor Dual",
+        title: "Beneficios para Todo el Ecosistema",
+        subtitle: "Comunidad, Locales Anfitriones y Marcas Patrocinadoras",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card">
+              <h3>🏪 Locales Anfitriones</h3>
+              <p>Ambiente sofisticado sin costo + 20% de las ganancias publicitarias de su pantalla.</p>
+            </div>
+            <div class="info-card highlight">
+              <h3>🎨 Artistas Locales</h3>
+              <p>Vitrina masiva 4K gratuita + contacto directo QR para venta de sus obras.</p>
+            </div>
+            <div class="info-card">
+              <h3>🌍 Comunidad & Turistas</h3>
+              <p>Acceso continuo a la oferta cultural y mapas turísticos de Risaralda.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "07 / 18",
+        tag: "Análisis de Competencia",
+        title: "Diferenciación Única en Colombia",
+        subtitle: "Superando a los operadores OOH tradicionales",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card">
+              <h3>📊 Publiguías / Interavia</h3>
+              <p>Modelo 100% comercial rígido, sin ganancias para el local ni apoyo a la cultura.</p>
+            </div>
+            <div class="info-card">
+              <h3>📺 Vallas Digitales</h3>
+              <p>Sin interactividad QR, sin contenido comunitario y altos costos operacionales.</p>
+            </div>
+            <div class="info-card highlight">
+              <h3>✨ El Ventanal</h3>
+              <p>Parrilla 80/20, canal QR interactivo, WebSockets en vivo y Revenue Share del 20% al local.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "08 / 18",
+        tag: "Nodos Piloto Pereira",
+        title: "Cobertura Inicial (8 a 10 Pantallas)",
+        subtitle: "Ubicaciones clave en sectores turísticos y comerciales",
+        layout: "split-img",
+        image: "university_screen.jpg",
+        content: `
+          <div class="grid-1" style="display:flex; flex-direction:column; gap:16px;">
+            <div class="info-card"><h3>🏥 Megacentro & Clínicas</h3><p>Salas de espera de alta permanencia (Contacto: Pacho Arias).</p></div>
+            <div class="info-card"><h3>✈️ Aeropuerto Matecaña</h3><p>Vitrina turística 4K para viajeros nacionales e internacionales.</p></div>
+            <div class="info-card"><h3>🎓 UTP & Universidades</h3><p>Plazoletas y centros culturales estudiantiles.</p></div>
+          </div>
+        `
+      },
+      {
+        num: "09 / 18",
+        tag: "Arquitectura Tecnológica",
+        title: "Digital Signage Engine",
+        subtitle: "Software desacoplado de alto rendimiento",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card">
+              <h3>🖥️ Reproductores Edge</h3>
+              <p>MiniPCs x86 compactos Kiosk Mode con salida HDMI limpia a 4K.</p>
+            </div>
+            <div class="info-card highlight">
+              <h3>⚡ WebSockets & Cloud</h3>
+              <p>Sincronización de parrilla en menos de 2 segundos desde el panel remoto.</p>
+            </div>
+            <div class="info-card">
+              <h3>📶 Modo Offline Resiliente</h3>
+              <p>Si falla la red, la pantalla emite la secuencia guardada localmente.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "10 / 18",
+        tag: "Canal Interactivo QR",
+        title: "Conectando al Espectador con el Creador",
+        subtitle: "Una experiencia digital fluida en el smartphone",
+        layout: "split-img",
+        image: "art_gallery.jpg",
+        content: `
+          <div class="grid-1" style="display:flex; flex-direction:column; gap:20px;">
+            <div class="info-card highlight">
+              <h3>📱 Escaneo Rápido</h3>
+              <p>El visitante apunta su celular al código QR en la esquina de la pantalla.</p>
+            </div>
+            <div class="info-card">
+              <h3>💬 Contacto Directo</h3>
+              <p>Abre el perfil del artista y permite chatear por WhatsApp sin intermediarios.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "11 / 18",
+        tag: "Modelo Financiero",
+        title: "Tres Fuentes de Ingreso Sostenibles",
+        subtitle: "Monetización equilibrada y escalable",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card">
+              <div class="stat-number">$50M</div>
+              <h3>Pauta B2B Local</h3>
+              <p>10 anunciantes por pantalla en el 20% de parrilla comercial.</p>
+            </div>
+            <div class="info-card highlight">
+              <div class="stat-number">20%</div>
+              <h3>Revenue Share Local</h3>
+              <p>Retribución económica mensual directa a los locales anfitriones.</p>
+            </div>
+            <div class="info-card">
+              <div class="stat-number">RSE</div>
+              <h3>Mecenazgo Corporativo</h3>
+              <p>Financiación de multinacionales vía incentivos CoCrea.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "12 / 18",
+        tag: "Apalancamiento Público",
+        title: "Convocatorias de Capital Semilla 2026",
+        subtitle: "Recursos estatales para la fase piloto e infraestructura",
+        layout: "cards",
+        content: `
+          <div class="grid-2">
+            <div class="info-card highlight">
+              <div class="stat-number" style="font-size:2.8rem;">$23.500.000 COP</div>
+              <h3>Alcaldía de Pereira — Estímulos 2026</h3>
+              <p>Línea Audiovisual y Digital. Financiamiento del piloto de 8-10 pantallas en fin de año (Oct - Dic).</p>
+            </div>
+            <div class="info-card">
+              <div class="stat-number" style="font-size:2.8rem; color:#10b981;">$200.000.000 COP</div>
+              <h3>SENA Fondo Emprender</h3>
+              <p>Capital Semilla 100% Condonable para adquisición de 20 pantallas 4K y 3 empleos directos.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "13 / 18",
+        tag: "Mecenazgo Privado",
+        title: "Incentivo Tributario Ley CoCrea (165%)",
+        subtitle: "Atrayendo la inversión de grandes multinacionales",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card highlight">
+              <div class="stat-number" style="color:#8b5cf6;">165%</div>
+              <h3>Deducción Tributaria</h3>
+              <p>Las empresas reducen su Impuesto de Renta invirtiendo en El Ventanal.</p>
+            </div>
+            <div class="info-card">
+              <h3>🏆 Mecenas Platino</h3>
+              <p>Aporte de $50M-$100M/año. Sponsor oficial de 10 pantallas permanentes.</p>
+            </div>
+            <div class="info-card">
+              <h3>🥇 Mecenas Oro</h3>
+              <p>Aporte de $20M-$49M/año. Cápsula de RSE en el 20% de la parrilla.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "14 / 18",
+        tag: "Cronograma Piloto 2026",
+        title: "Aprovechando la Temporada Alta Turística",
+        subtitle: "Ejecución estratégica durante el último trimestre del año",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card">
+              <h3>🎒 Octubre 2026</h3>
+              <p>Montaje técnico de 8-10 pantallas en la Semana de Receso Escolar.</p>
+            </div>
+            <div class="info-card highlight">
+              <h3>🍽️ Noviembre 2026</h3>
+              <p>Circulación de galerías y temporada gastronómica regional.</p>
+            </div>
+            <div class="info-card">
+              <h3>🎄 Diciembre 2026</h3>
+              <p>Especial de Alumbrados, turismo masivo de fin de año e informe final.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "15 / 18",
+        tag: "Presupuesto Eficiente",
+        title: "Desglose Inversión Pereira ($23.5M COP)",
+        subtitle: "Transparencia y máxima optimización presupuestal",
+        layout: "cards",
+        content: `
+          <div class="grid-2">
+            <div class="info-card"><h3>📺 Hardware (8-10 Nodos): $10.5M</h3><p>Alquiler de MiniPCs x86, pantallas comerciales y soportes.</p></div>
+            <div class="info-card"><h3>💻 Software & Cloud 4K: $7.0M</h3><p>Desarrollo web app, servidores cloud y adaptación gráfica.</p></div>
+            <div class="info-card"><h3>📣 Marketing & Señalética QR: $3.5M</h3><p>Impresión de soportes físicos QR + dossier de ventas.</p></div>
+            <div class="info-card"><h3>🛠️ Logística & Póliza 10%: $2.5M</h3><p>Montaje in situ en Pereira + Póliza de Cumplimiento.</p></div>
+          </div>
+        `
+      },
+      {
+        num: "16 / 18",
+        tag: "Impacto Social & SENA",
+        title: "Generación de Empleo y Valor Cultural",
+        subtitle: "Indicadores clave de desarrollo regional",
+        layout: "cards",
+        content: `
+          <div class="grid-3">
+            <div class="info-card highlight">
+              <div class="stat-number">3</div>
+              <h3>Empleos Directos</h3>
+              <p>Desarrollador Cloud, Ejecutivo Comercial y Curador de Arte.</p>
+            </div>
+            <div class="info-card">
+              <div class="stat-number">20+</div>
+              <h3>Artistas Locales</h3>
+              <p>Exposición gratuita 4K y canal de contacto comercial.</p>
+            </div>
+            <div class="info-card">
+              <div class="stat-number">50k+</div>
+              <h3>Espectadores/Mes</h3>
+              <p>Audiencia cautiva alcanzada en Risaralda.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "17 / 18",
+        tag: "Demostración en Vivo",
+        title: "Plataforma Web Desplegada",
+        subtitle: "Prueba la experiencia interactiva en tiempo real",
+        layout: "split-img",
+        image: "hero_art.jpg",
+        content: `
+          <div class="grid-1" style="display:flex; flex-direction:column; gap:20px;">
+            <div class="info-card highlight">
+              <h3>🌐 elventanal.vercel.app</h3>
+              <p>Visita nuestro sitio oficial en vivo con simulación interactiva de pantalla.</p>
+            </div>
+            <div class="info-card">
+              <h3>✉️ elv3ntanal@gmail.com</h3>
+              <p>Canal directo de contacto para alianzas y mecenazgo corporativo.</p>
+            </div>
+          </div>
+        `
+      },
+      {
+        num: "18 / 18",
+        tag: "Conclusión & Siguiente Paso",
+        title: "Hagamos de Pereira la Capital Cultural Digital",
+        subtitle: "Uniendo arte, tecnología e impacto económico local",
+        layout: "cover",
+        image: "logo.jpg",
+        content: `
+          <div class="grid-2">
+            <div class="info-card highlight">
+              <h3>🤝 Siguiente Paso Inmediato</h3>
+              <p>Firma de Cartas de Intención con los sitios anfitriones piloto e inscripción en Pereira antes del 21 de agosto de 2026.</p>
+            </div>
+            <div class="info-card">
+              <h3>🚀 Gracias por sumar al proyecto</h3>
+              <p>El Ventanal • Pantallas Culturales e Interactivas • Pereira, Colombia 2026</p>
+            </div>
+          </div>
+        `
+      }
+    ];
+
+    function renderSlide(index) {
+      const data = slidesData[index];
+      const container = document.getElementById('slideContainer');
+      
+      let bodyHtml = '';
+      if (data.layout === 'split-img') {
+        bodyHtml = `
+          <div class="content-body">
+            <div style="flex: 1.1;">${data.content}</div>
+            <div style="flex: 0.9;" class="img-frame">
+              <img src="./images/${data.image}" alt="${data.title}">
+            </div>
+          </div>
+        `;
+      } else if (data.layout === 'cover') {
+        bodyHtml = `
+          <div class="content-body" style="gap: 40px;">
+            <div style="width: 260px; height: 260px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(6,182,212,0.5); flex-shrink: 0;">
+              <img src="./images/${data.image}" style="width:100%; height:100%; object-fit:contain; background:#090d16;" alt="Logo">
+            </div>
+            <div style="flex: 1;">${data.content}</div>
+          </div>
+        `;
+      } else {
+        bodyHtml = `<div class="content-body">${data.content}</div>`;
+      }
+
+      const fillPct = Math.round(((index + 1) / slidesData.length) * 100);
+
+      container.innerHTML = `
+        <div class="slide-header">
+          <div class="slide-tag">✨ ${data.tag}</div>
+          <div class="slide-num">${data.num}</div>
+        </div>
+        <div class="title-box">
+          <h1 class="slide-title">${data.title}</h1>
+          <p class="slide-subtitle">${data.subtitle}</p>
+        </div>
+        ${bodyHtml}
+        <div class="slide-footer">
+          <div class="brand-footer">
+            <img src="./images/logo.jpg" alt="Logo">
+            <span>EL VENTANAL • PANTALLAS CULTURALES</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: ${fillPct}%;"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Default load slide 0
+    renderSlide(0);
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_01.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_02.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_03.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_04.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_05.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_06.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_07.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_08.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_09.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_10.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_11.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_12.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_13.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_14.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_15.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_16.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_17.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_18.png'
+duration 9.0
+file 'd:/Descargas 2/Antigravity/Digital Signage/El Ventanal/video_presentation/frames/slide_18.png'
