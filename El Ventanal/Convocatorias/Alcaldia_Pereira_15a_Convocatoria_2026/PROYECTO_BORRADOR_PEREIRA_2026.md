@@ -23,7 +23,9 @@
    - [ ] Persona Jurídica sin Ánimo de Lucro  
 
 4. **Monto Solicitado a la Convocatoria:**  
-   **$20.000.000 COP** (Valor del estímulo individual estándar en la línea de innovación)
+   - **$13.000.000 COP** *(Si se postula en Artes Visuales — Categoría 3 Larga Trayectoria)*  
+   - **$25.500.000 COP** *(Si se postula en la Línea Audiovisual y Contenidos Digitales — Tope Máximo de la Cartilla)*  
+   *(Nota: La cartilla de Pereira establece cuantías fijas cerradas por categoría. Pedir un valor superior al tope fijado provoca la descalificación automática del proyecto).*
 
 5. **Duración de la Ejecución:**  
    **3 Meses** (Septiembre - Noviembre de 2026)
