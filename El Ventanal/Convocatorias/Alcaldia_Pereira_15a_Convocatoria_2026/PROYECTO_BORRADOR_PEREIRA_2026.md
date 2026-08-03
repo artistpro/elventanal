@@ -23,8 +23,8 @@
    - [ ] Grupo Constituido  
    - [ ] Persona Jurídica sin Ánimo de Lucro  
 
-4. **Monto Solicitado a la Convocatoria (Ajustado al 100% a la Cartilla):**  
-   **$25.500.000 COP** *(Tope exacto y legal permitido por la cartilla de Pereira para esta categoría).*
+4. **Monto Solicitado a la Convocatoria (Estrategia de Eficiencia Presupuestal):**  
+   **$23.500.000 COP** *(Valor ubicado por debajo del tope máximo de $25.5M para garantizar margen de seguridad y demostrar eficiencia presupuestal ante los jurados).*
 
 5. **Duración de la Ejecución:**  
    **3 Meses** (Septiembre - Noviembre de 2026)
@@ -89,16 +89,16 @@ Instalar y operar durante 90 días una red piloto de 5 galerías digitales inter
 
 ---
 
-## VIII. PRESUPUESTO DESGLOSADO ($25.500.000 COP EXACTOS)
+## VIII. PRESUPUESTO DESGLOSADO ($23.500.000 COP EXACTOS)
 
 | Rubro Presupuestal | Descripción y Detalle | Valor (COP) |
 | :--- | :--- | :--- |
-| **Honorarios de Curaduría y Artistas** | Pago de derechos de exhibición a 15 artistas visuales/fotógrafos de Pereira ($600.000 c/u) + Honorarios de Curador. | $10.500.000 |
-| **Equipamiento y Hardware Piloto** | Alquiler/Adecuación de 5 reproductores MiniPC x86 + pantallas comerciales + soportes y cables HDMI. | $6.500.000 |
-| **Producción Gráfica y Software** | Adaptación de piezas 4K, desarrollo de servidor de contenidos y optimización de plataforma web. | $4.500.000 |
-| **Impresión de Material QR y Señalética** | Material de soporte físico en acrílico/vinilo para el canal QR interactivo en cada pantalla. | $2.000.000 |
+| **Honorarios de Curaduría y Artistas** | Pago de derechos de exhibición a 15 artistas visuales/fotógrafos de Pereira ($550.000 c/u) + Honorarios de Curador. | $9.750.000 |
+| **Equipamiento y Hardware Piloto** | Alquiler/Adecuación de 5 reproductores MiniPC x86 + pantallas comerciales + soportes y cables HDMI. | $6.000.000 |
+| **Producción Gráfica y Software** | Adaptación de piezas 4K, desarrollo de servidor de contenidos y optimización de plataforma web. | $4.000.000 |
+| **Impresión de Material QR y Señalética** | Material de soporte físico en acrílico/vinilo para el canal QR interactivo en cada pantalla. | $1.750.000 |
 | **Imprevistos y Logística Local** | Traslados, montaje técnico in situ y póliza de cumplimiento (10% exigida por Pereira). | $2.000.000 |
-| **TOTAL EXACTO SOLICITADO** | **Aporte Convocatoria Estímulos Pereira 2026 (Línea Audiovisual/Digital)** | **$25.500.000** |
+| **TOTAL EXACTO SOLICITADO** | **Aporte Convocatoria Estímulos Pereira 2026 (Eficiencia $23.5M)** | **$23.500.000** |
 
 ---
 
