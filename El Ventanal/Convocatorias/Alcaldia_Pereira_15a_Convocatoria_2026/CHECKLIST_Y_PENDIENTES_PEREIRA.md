@@ -1,40 +1,77 @@
-# Checklist & Pendientes — Convocatoria Estímulos Pereira 2026 📋🚨
+# Checklist, Gestión de Documentos y Manual de Subsanación — Convocatoria Estímulos Pereira 2026 📋🚨
 
-> **Fecha Límite:** 21 de Agosto de 2026 (Hasta las 11:59 PM en Plataforma Digital)  
-> **Estado Actual:** Borrador Estructurado al 80% • En proceso de recolección documental.
-
----
-
-## 📌 1. Documentos Habilitantes Obligatorios (Persona Natural / Grupo)
-
-- [ ] **Formulario Único de Inscripción**: Diligenciado en la plataforma virtual de la Secretaría de Cultura de Pereira.
-- [ ] **Fotocopia de la Cédula de Ciudadanía**: Ambas caras, legible, del proponente o representante legal.
-- [ ] **Certificado de Vecindad de Pereira**: Expedido por la Secretaría de Gobierno de Pereira con vigencia no mayor a 6 meses.
-- [ ] **RUT Actualizado**: Con actividad económica vinculada a artes o tecnología (CIIU 9004, 9008, 5911, 6201).
-- [ ] **Certificados de Antecedentes (No mayores a 30 días)**:
-  - [ ] Antecedentes Judiciales (Policía Nacional).
-  - [ ] Antecedentes Fiscales (Contraloría General).
-  - [ ] Antecedentes Disciplinarios (Procuraduría General).
-  - [ ] Medidas Correctivas (RNMC Policía).
+> **Fuente Oficial:** Manual de la 15ª Convocatoria Municipal de Estímulos de Pereira (Numerales 12, 13, 14, 15, 20 y 23)  
+> **Fecha Límite Inicial de Cierre:** 21 de Agosto de 2026 (Hasta las 3:00 PM en Plataforma Digital)  
+> **Fechas Clave de Subsanación:** 25 y 26 de Agosto de 2026  
+> **Ubicación en Repositorio:** `Digital Signage/El Ventanal/Convocatorias/Alcaldia_Pereira_15a_Convocatoria_2026/`  
+> **Bóveda Sincronizada:** `Obsidian Vault/Proyectos Artist Pro/Digital Signage/El Ventanal/Convocatorias/Alcaldia_Pereira_15a_Convocatoria_2026/`
 
 ---
 
-## 🎨 2. Componentes Técnicos y de Contenido del Proyecto
+## 📌 1. MATRIZ DE DOCUMENTOS: SUBSANABLES VS. NO SUBSANABLES
 
-- [x] **Propuesta Técnica Redactada**: Documento completo en `PROYECTO_BORRADOR_PEREIRA_2026.md`.
-- [x] **Landing Page & Demostración Interactiva**: Disponible y visible en **[`https://elventanal.vercel.app/`](https://elventanal.vercel.app/)**.
-- [ ] **Dossier de Obras / Curaduría Inicial**: Muestra fotográfica de 10 a 15 piezas de arte digital/fotografía que se exhibirán.
-- [ ] **Cartas de Intención de Sitios Anfitriones**:
-  - [ ] Carta de Intención 1 (Bar / Restaurante en Pereira).
-  - [ ] Carta de Intención 2 (Universidad / Centro Educativo).
-  - [ ] Carta de Intención 3 (Gimnasio / Centro de Bienestar).
+En la Convocatoria de Pereira, la omisión de un documento **NO SUBSANABLE** genera el **RECHAZO INMEDIATO Y DEFINITIVO** de la propuesta sin derecho a corrección.
+
+### 🔴 Documentos NO SUBSANABLES (¡Obligatorios desde el primer día de inscripción!)
+
+| N° | Documento Requerido | Formato / Requisito | Estado |
+| :--- | :--- | :--- | :--- |
+| **1** | **Formulario de Inscripción (Anexo 1)** | Firmado digital o físicamente. No alterable. | [ ] Pendiente |
+| **2** | **Formato Oficial de Propuesta (Anexo 2)** | Documento oficial de Word suministrado por Pereira. **Prohibido modificar la estructura de celdas o títulos, so pena de rechazo**. | [x] Borrador Listo |
+| **3** | **Cédula de Ciudadanía / Extranjería** | Escaneada por ambas caras, legible, en un **único archivo PDF**. | [ ] Pendiente |
+| **4** | **Certificado de Vecindad de Pereira** | Expedido por la **Secretaría de Gobierno de Pereira** (vigencia no mayor a 6 meses) que acredite residencia > 2 años (colombianos) o > 5 años (extranjero). | [ ] Pendiente |
+| **5** | **Soportes Técnicos del Proyecto** | Propuesta técnica en un solo PDF. Incluir enlace a la demostración web: **[`https://elventanal.vercel.app/`](https://elventanal.vercel.app/)**. | [x] Completo |
 
 ---
 
-## 📅 3. Cronograma de Trabajo Esta Semana (3 - 10 de Agosto)
+### 🟢 Documentos SUBSANABLES (Se pueden aportar o corregir el 25 y 26 de Agosto de 2026)
 
-1. **Lunes 3 de Agosto**: Apertura oficial de la plataforma • Descarga de anexos finales.
-2. **Miércoles 5 de Agosto**: Tramitar Certificado de Vecindad ante la Secretaría de Gobierno de Pereira.
-3. **Viernes 7 de Agosto**: Firmar las 3 cartas de intención con los sitios anfitriones piloto.
-4. **Lunes 10 al Miércoles 12 de Agosto**: Carga de documentos en la plataforma digital de Pereira.
-5. **Viernes 21 de Agosto**: Cierre definitivo de postulaciones.
+| N° | Documento Subsanable | Enlace / Trámite | Estado |
+| :--- | :--- | :--- | :--- |
+| **6** | **Registro Único de Agentes Culturales (SOY CULTURA)** | Constancia de registro emitida por el Ministerio de Cultura (`soycultura.mincultura.gov.co`). | [ ] Pendiente |
+| **7** | **Certificado de Antecedentes (Policía, Contraloría, Procuraduría)** | Expedición gratuita en línea con vigencia menor a 30 días. | [ ] Pendiente |
+| **8** | **Certificado Notarial de Grupo (Si aplica)** | Acta autenticada en notaría asignando al representante legal. | [N/A Persona Natural] |
+
+---
+
+## 💻 2. REGLAS Y RESTRICCIONES TÉCNICAS DE LA PLATAFORMA DE INSCRIPCIÓN
+
+1. **Canal Único Digital:** Únicamente a través del portal oficial: `https://www.pereira.gov.co/cultura/publicaciones/11207/convocatoria-de-estimulos/`.
+2. **Formato Obligatorio:** Todos los archivos adjuntos deben estar estrictamente en formato **PDF**.
+3. **Límite de Peso Total:** La totalidad de los archivos cargados **NO PUEDE SUPERAR LOS 20 MB**.
+4. **Inserción de Enlaces (URLs):** Los enlaces externos (como la Landing Page en Vercel, videos o carpetas en la nube) **deben insertarse como texto dentro del documento PDF principal**, asegurándose de que sean legibles y clicables.
+5. **Verificación de Radicación:** Inmediatamente después del envío en plataforma, enviar un correo a `convocatoriaspereira@pereira.gov.co` solicitando acuse de recibo.
+
+---
+
+## 🔄 3. PROCEDIMIENTO DETALLADO DE SUBSANACIÓN Y EVALUACIÓN
+
+```
+[21 de Agosto]  ──> 🔴 Cierre de la Convocatoria (3:00 PM)
+         │
+[24 de Agosto]  ──> 📄 Publicación del Listado Inicial (Habilitados, Inhabilitados y Por Subsanar)
+         │
+[25 y 26 Agosto]──> 🛠️ VENTANA ÚNICA DE SUBSANACIÓN (48 Horas)
+         │           • Acceder al portal web de la Secretaría de Cultura.
+         │           • Adjuntar exclusivamente los documentos marcados como subsanables en la lista.
+         │           • Guardar comprobante de subsanación.
+         │
+[28 de Agosto]  ──> 📄 Publicación del Listado Definitivo de Habilitados
+         │
+[14 Septiembre] ──> ⚖️ Evaluación Técnica por 3 Jurados Externos
+         │
+[18 Septiembre] ──> 🏆 Publicación Oficial del Acto Administrativo de Ganadores
+```
+
+---
+
+## 🏛️ 4. PROCEDIMIENTO DE LEGALIZACIÓN Y DESEMBOLSO (PARA GANADORES)
+
+Para recibir el desembolso del estímulo asignado ($23.500.000 COP), se deben tramitar los siguientes requisitos tras la publicación de ganadores:
+
+1. **Póliza de Cumplimiento (10% del Valor del Estímulo)**:
+   - Expedir póliza de seguro por valor de **$2.350.000 COP** a favor del Municipio de Pereira (NIT 891.480.030-2).
+   - Vigencia: Desde la firma de la resolución hasta el **30 de Diciembre de 2026 + 6 meses más**.
+2. **RUT Actualizado**: Descargado de la DIAN con fecha no mayor a 30 días calendario, indicando responsabilidad fiscal/IVA y código CIIU cultural.
+3. **Certificación Bancaria Activa**: Expedida por la entidad bancaria en el mes en curso a nombre del ganador.
+4. **Desembolso Único (100%)**: Se realiza al finalizar la ejecución (Diciembre de 2026) tras la aprobación del informe final por parte del supervisor asignado por la Secretaría de Cultura.
