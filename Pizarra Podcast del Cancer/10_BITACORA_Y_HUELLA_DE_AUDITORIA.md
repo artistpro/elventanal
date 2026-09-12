@@ -1,5 +1,5 @@
 # 📋 10. Bitácora de Despliegues y Huella de Auditoría
-## Registro Forense, Auditoría de Calidad y Cumplimiento del Reglamento (v1.6)
+## Registro Forense, Auditoría de Calidad y Cumplimiento del Reglamento (v1.7)
 
 ---
 
@@ -28,6 +28,8 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 | **Congelamiento de Titulares Diarios** | El banco offline de respaldo tenía solo 4 noticias fijas, repitiéndose siempre. | Ampliación a un **Banco Curado de 24 Monografías Clínicas** con rotación matemática `(día * 4) % 24` para 30 días de noticias únicas. | ✅ Verificado: Rotación mensual probada sin repeticiones. |
 | **Riesgo de Moderación en YouTube (Nudity / Sensitive Words)** | Riesgo de que feeds o APIs de museos incluyan términos sexuales, ginecológicos o desnudos en esculturas. | • Filtro estricto `contains_sensitive_content()` con lista negra léxica.<br>• Reorientación hacia fe, amor, esperanza, familia, mente y hábitos.<br>• Banco Curado Maestro de 40 obras 100% libre de desnudez. | ✅ Verificado: Apto para todas las edades y anunciantes (Family & Advertiser-Safe). |
 | **Monotonía en la Galería "Arte Que Sana"** | 4 obras estáticas sin actualización diaria ni participación comunitaria. | • Galería de 8 obras activas con balance 50/50 (4 de sanantes/comunidad + 4 de grandes maestros).<br>• Rotación continua de 4 obras cada medianoche (00:00). | ✅ Verificado: Cronjob activo en VPS 1 y 8 obras inyectadas en Firebase. |
+| **Pérdida de Imágenes y Repetición en Suplementos** | Las tarjetas usaban `display: 'none'` al fallar una imagen (dejando cajas vacías) y solo había 8 variantes básicas. | • Blindaje triple de imágenes con fallback indestructible `FALLBACK_SUPPLEMENT_IMAGE`.<br>• Catálogo de 24 variantes clínicas del Protocolo Dr. Pete Sulack y Oncología Integrativa en 4 bloques.<br>• Rotación diaria continua (sliding window de 4 suplementos) con cronjob a las 00:00 y control 1-clic en AdminConsole. | ✅ Verificado: 4 fichas activas en Firebase RTDB y cronjob probado en VPS 1. |
+
 
 ---
 
@@ -58,6 +60,7 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 * **`c2f3286`:** `feat(news-safety): blindaje estricto youtube advertiser-safe, filtro de palabras sensibles y enfoque en esperanza y espiritualidad`
 * **`f3017a8`:** `docs: actualizar MANUAL_SISTEMA_24_7 y ARQUITECTURA_Y_ROADMAP a v1.5 con huella de auditoria`
 * **`99a605f`:** `feat(art): v1.6 Galeria Dinamica Arte Que Sana con 8 obras rotativas, balance 50/50 comunidad y maestros, cron 24h y blindaje YouTube Safe`
+* **`3686e2c`:** `feat(supplements): v1.7 catalogo maestro 24 suplementos Dr Sulack, blindaje triple de imagenes y rotacion continua 24h`
 
 ---
 
@@ -67,7 +70,10 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
   - Proceso de Streaming: `podcast_cancer_stream.service` activo sin reinicios.
   - Cron Noticias: `0 6,18 * * * /home/rik/streams/podcast_cancer/venv/bin/python3 .../auto_news_updater.py`
   - Cron Arte: `0 0 * * * /home/rik/streams/podcast_cancer/venv/bin/python3 .../auto_art_updater.py`
+  - Cron Suplementos: `0 0 * * * /home/rik/streams/podcast_cancer/venv/bin/python3 .../auto_supplement_updater.py`
 * **Firebase Realtime Database:**
   - `podcast_cancer/board_state/goodNews.json`: 4 noticias enriquecidas activas.
   - `podcast_cancer/board_state/artCards.json`: 8 obras terapéuticas activas.
+  - `podcast_cancer/board_state/supplementsList.json`: 4 fichas activas del catálogo de 24 variantes.
+  - `podcast_cancer/board_state/supplement.json`: Ficha destacada sincronizada.
 * **Vercel Web:** Despliegue automático exitoso en `https://pizarra-podcast-cancer.vercel.app`.
