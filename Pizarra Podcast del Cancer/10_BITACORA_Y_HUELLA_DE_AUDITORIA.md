@@ -29,6 +29,9 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 | **Riesgo de Moderación en YouTube (Nudity / Sensitive Words)** | Riesgo de que feeds o APIs de museos incluyan términos sexuales, ginecológicos o desnudos en esculturas. | • Filtro estricto `contains_sensitive_content()` con lista negra léxica.<br>• Reorientación hacia fe, amor, esperanza, familia, mente y hábitos.<br>• Banco Curado Maestro de 40 obras 100% libre de desnudez. | ✅ Verificado: Apto para todas las edades y anunciantes (Family & Advertiser-Safe). |
 | **Monotonía en la Galería "Arte Que Sana"** | 4 obras estáticas sin actualización diaria ni participación comunitaria. | • Galería de 8 obras activas con balance 50/50 (4 de sanantes/comunidad + 4 de grandes maestros).<br>• Rotación continua de 4 obras cada medianoche (00:00). | ✅ Verificado: Cronjob activo en VPS 1 y 8 obras inyectadas en Firebase. |
 | **Pérdida de Imágenes y Repetición en Suplementos** | Las tarjetas usaban `display: 'none'` al fallar una imagen (dejando cajas vacías) y solo había 8 variantes básicas. | • Blindaje triple de imágenes con fallback indestructible `FALLBACK_SUPPLEMENT_IMAGE`.<br>• Catálogo de 24 variantes clínicas del Protocolo Dr. Pete Sulack y Oncología Integrativa en 4 bloques.<br>• Rotación diaria continua (sliding window de 4 suplementos) con cronjob a las 00:00 y control 1-clic en AdminConsole. | ✅ Verificado: 4 fichas activas en Firebase RTDB y cronjob probado en VPS 1. |
+| **Infiltración de Noticias de Vacunas / ARNm** | Feeds RSS externos incluyeron notas promoviendo vacunas ("Vacunarse protege el corazón"), contrarias a la línea editorial. | • Purga inmediata de Firebase RTDB sustituyendo por medicina mente-cuerpo (coherencia cardíaca y nervio vago).<br>• Filtro inflexible `PROHIBITED_VACCINE_WORDS` en Python y TypeScript que descarta cualquier mención a vacunas o ARNm.<br>• Regla estricta en el prompt de DeepSeek prohibiendo sintetizar vacunas. | ✅ Verificado: Descarte de 2 artículos en VPS 1 probado en consola. |
+| **Espacios Vacíos y Tipografía Reducida en Arte Que Sana** | En celulares, el texto de la tarjeta era pequeño y dejaba espacios vacíos en el degradé. | • Rediseño mobile-first y senior-friendly en `ArtThatHeals.tsx` y `FullScreenArt.tsx`.<br>• Badge de autor/comunidad dorado, titular protagónico (1.58rem - 3.6rem), reflexión ampliada (1.26rem - 1.95rem) y píldora de respiración en la base.<br>• Actualización homogénea del versionado a `v1.7` en header, tipos y panel. | ✅ Verificado: Compilación limpia `npm run build` y despliegue Vercel. |
+
 
 
 ---
@@ -61,6 +64,7 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 * **`f3017a8`:** `docs: actualizar MANUAL_SISTEMA_24_7 y ARQUITECTURA_Y_ROADMAP a v1.5 con huella de auditoria`
 * **`99a605f`:** `feat(art): v1.6 Galeria Dinamica Arte Que Sana con 8 obras rotativas, balance 50/50 comunidad y maestros, cron 24h y blindaje YouTube Safe`
 * **`3686e2c`:** `feat(supplements): v1.7 catalogo maestro 24 suplementos Dr Sulack, blindaje triple de imagenes y rotacion continua 24h`
+* **`dbb3cee`:** `feat(safety-typography): v1.7 filtro estricto anti-vacunas/ARNm, rediseño senior de arte que sana para celulares y versionado v1.7`
 
 ---
 
