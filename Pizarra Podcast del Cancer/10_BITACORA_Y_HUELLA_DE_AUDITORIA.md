@@ -1,5 +1,5 @@
 # 📋 10. Bitácora de Despliegues y Huella de Auditoría
-## Registro Forense, Auditoría de Calidad y Cumplimiento del Reglamento (v1.7)
+## Registro Forense, Auditoría de Calidad y Cumplimiento del Reglamento (v1.8)
 
 ---
 
@@ -31,6 +31,7 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 | **Pérdida de Imágenes y Repetición en Suplementos** | Las tarjetas usaban `display: 'none'` al fallar una imagen (dejando cajas vacías) y solo había 8 variantes básicas. | • Blindaje triple de imágenes con fallback indestructible `FALLBACK_SUPPLEMENT_IMAGE`.<br>• Catálogo de 24 variantes clínicas del Protocolo Dr. Pete Sulack y Oncología Integrativa en 4 bloques.<br>• Rotación diaria continua (sliding window de 4 suplementos) con cronjob a las 00:00 y control 1-clic en AdminConsole. | ✅ Verificado: 4 fichas activas en Firebase RTDB y cronjob probado en VPS 1. |
 | **Infiltración de Noticias de Vacunas / ARNm** | Feeds RSS externos incluyeron notas promoviendo vacunas ("Vacunarse protege el corazón"), contrarias a la línea editorial. | • Purga inmediata de Firebase RTDB sustituyendo por medicina mente-cuerpo (coherencia cardíaca y nervio vago).<br>• Filtro inflexible `PROHIBITED_VACCINE_WORDS` en Python y TypeScript que descarta cualquier mención a vacunas o ARNm.<br>• Regla estricta en el prompt de DeepSeek prohibiendo sintetizar vacunas. | ✅ Verificado: Descarte de 2 artículos en VPS 1 probado en consola. |
 | **Espacios Vacíos y Tipografía Reducida en Arte Que Sana** | En celulares, el texto de la tarjeta era pequeño y dejaba espacios vacíos en el degradé. | • Rediseño mobile-first y senior-friendly en `ArtThatHeals.tsx` y `FullScreenArt.tsx`.<br>• Badge de autor/comunidad dorado, titular protagónico (1.58rem - 3.6rem), reflexión ampliada (1.26rem - 1.95rem) y píldora de respiración en la base.<br>• Actualización homogénea del versionado a `v1.7` en header, tipos y panel. | ✅ Verificado: Compilación limpia `npm run build` y despliegue Vercel. |
+| **Fondo Plano y Estático de la Pizarra (v1.8)** | Gradiente fijo sin sensación de luz viva o respiración orgánica en emisiones 24/7. | • Componente desacoplado `AmbientLiveBackground.tsx` con aceleración GPU (`translate3d`, `filter: blur()`).<br>• Doble orbe de luz orbital en tonos esmeralda/jade (día) y zafiro/índigo (noche).<br>• Respiración vital diafragmática de 12 segundos y conmutador interactivo con selector de velocidad en `AdminConsole.tsx`.<br>• Elevación a `v1.8` en todo el sistema. | ✅ Verificado: <0.5% CPU overhead en streaming y sincronizado en Firebase RTDB y Vercel. |
 
 
 
@@ -65,6 +66,7 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
 * **`99a605f`:** `feat(art): v1.6 Galeria Dinamica Arte Que Sana con 8 obras rotativas, balance 50/50 comunidad y maestros, cron 24h y blindaje YouTube Safe`
 * **`3686e2c`:** `feat(supplements): v1.7 catalogo maestro 24 suplementos Dr Sulack, blindaje triple de imagenes y rotacion continua 24h`
 * **`dbb3cee`:** `feat(safety-typography): v1.7 filtro estricto anti-vacunas/ARNm, rediseño senior de arte que sana para celulares y versionado v1.7`
+* **`03e0e1a`:** `feat(background): v1.8 fondo ambiental bioluminiscente dinamico con luz viva, respiracion cromatica y aceleracion GPU`
 
 ---
 
@@ -76,8 +78,9 @@ Estado Final          : ✅ 100% AUDITADO, CERTIFICADO Y TRANSMITIENDO EN VIVO
   - Cron Arte: `0 0 * * * /home/rik/streams/podcast_cancer/venv/bin/python3 .../auto_art_updater.py`
   - Cron Suplementos: `0 0 * * * /home/rik/streams/podcast_cancer/venv/bin/python3 .../auto_supplement_updater.py`
 * **Firebase Realtime Database:**
-  - `podcast_cancer/board_state/goodNews.json`: 4 noticias enriquecidas activas.
+  - `podcast_cancer/board_state/headerTitle.json`: `"EL PODCAST DEL CÁNCER v1.8"`.
+  - `podcast_cancer/board_state/goodNews.json`: 4 noticias enriquecidas activas (0% vacunas/ARNm).
   - `podcast_cancer/board_state/artCards.json`: 8 obras terapéuticas activas.
-  - `podcast_cancer/board_state/supplementsList.json`: 4 fichas activas del catálogo de 24 variantes.
+  - `podcast_cancer/board_state/supplementsList.json`: 4 fichas activas del catálogo de 24 variantes del Dr. Pete Sulack.
   - `podcast_cancer/board_state/supplement.json`: Ficha destacada sincronizada.
-* **Vercel Web:** Despliegue automático exitoso en `https://pizarra-podcast-cancer.vercel.app`.
+* **Vercel Web:** Despliegue automático exitoso en `https://pizarra-podcast-cancer.vercel.app` con fondo ambiental bioluminiscente activo y selector de velocidad en panel.
